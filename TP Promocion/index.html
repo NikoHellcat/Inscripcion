@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sucursal</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Hoja de estilos -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilos.css'>
+    
+    <!-- JavaScript -->
+    <script src='js/validaciones.js'></script>
+
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header" id="header">
+
+    </header>
+
+    <!-- INSCRIPCION -->
+    <section class="inscripcion" id="inscripcion">
+
+        <!-- Formulario inscripcion -->
+        <form class="formulario" id="formulario">
+
+            <!-- Contenedor Inputs -->
+            <div class="contenedor_inputs">
+
+                <!-- Titulo -->
+                <h1> Inscripción </h1>
+
+                <!-- Puesto trabajo -->
+                <select id="puesto" name="puesto" class="input" required>
+                    <option value="">Seleccione puesto de trabajo</option>
+                    <option value="Cajero">Cajero</option>
+                    <option value="Contador">Contador</option>
+                    <option value="Conserge">Conserge</option>
+                    <option value="Guardia">Guardia</option>
+                    <option value="Gerente">Gerente</option>
+                </select>
+
+                <!-- Apellido -->
+                <input type="text" name="apellido" placeholder="Apellido" id="apellido" class="input" maxlength="30" required>
+
+                <!-- Nombre -->
+                <input type="text" name="nombre" placeholder="Nombre" id="nombre" class="input" maxlength="30" required>
+
+                <!-- Tipo documento -->
+                <select id="tipo_doc" name="tipo_doc" class="input" required>
+                    <option value="">Seleccione tipo de documento</option>
+                    <option value="DNI">DNI</option>
+                    <option value="LC">LC</option>
+                    <option value="LE">LE</option>
+                    <option value="CUIL">CUIL</option>
+                    <option value="CUIT">CUIT</option>
+                </select>
+
+                <!-- Nro documento-->
+                <input type="number" name="documento" placeholder="Nro Documento" id="nro_doc" class="input" required>
+
+                <!-- Email -->
+                <input type="email" name="mail" placeholder="E-mail" id="mail" class="input" maxlength="30" required>
+
+                <!-- Fecha nacimiento -->
+                <div class="fecha_nac"> Fecha de nacimiento: </div>
+                <input type="date" name="fecha_nac" id="fecha_nac" class="input" required>
+
+                <!-- Imagen -->
+                <button class="subir" id="subir_img">Seleccione una imagen</button>
+                <input type="file" name="foto" id="prof_pic" accept="image/jpeg" hidden required>
+
+                <!-- Archivo -->
+                <button class="subir" id="subir_file">Seleccione un archivo</button>
+                <input type="file" name="curriculum" id="file" accept="application/pdf" hidden required>
+
+            </div>
+
+            <!-- Contenedor buttons -->
+            <div class="contenedor_buttons">
+
+                <!-- Btn aceptar -->
+                <button type="submit" class="enviar" id="enviar">Enviar</button>
+
+                <!-- Btn cancelar -->
+                <button class="borrar" id="borrar">Borrar</button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+
+        <div class="hidden" id="info" >
+
+            Ya existe una inscripcion
+        </div>
+    </footer>
+</body>
+</html>

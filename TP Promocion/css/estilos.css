@@ -1,0 +1,176 @@
+/* HOJA DE ESTILOS SUCURSAL */
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #f2f2f2;
+	font-family: 'Slabo 27px', serif;
+	font-size: 18px;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.inscripcion {
+	width: 400px;
+	margin: 40px auto;
+}
+
+.formulario .contenedor_inputs{
+	padding: 20px;
+	background: #fff;
+	border-radius:6px 6px 0 0;
+}
+
+
+.formulario .input{
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 15px 10px;
+	border:none;
+    border-radius: 5px;
+	border-bottom: 2px solid #ccc;
+	font-family: 'Slabo 27px', serif;
+	font-size: 18px;
+}
+
+.formulario input[type="text"]:hover,
+.formulario input[type="number"]:hover,
+.formulario input[type="date"]:hover,
+.formulario input[type="email"]:hover {
+	border-bottom: 2px solid #246eb9;
+}
+
+.formulario select:hover{
+	border-bottom: 2px solid #246eb9;
+	cursor: pointer;
+}
+
+.fecha_nac{
+    display: block;
+	width: 100%;
+	padding: 15px 10px;
+	border:none;
+	font-family: 'Slabo 27px', serif;
+	font-size: 18px;
+}
+
+.subir{
+	width: 40%;
+	margin-bottom: 20px;
+	padding: 15px 10px;
+	border:none;
+    border-radius: 5px;
+	font-family: 'Slabo 27px', serif;
+	font-size: 18px;
+    background-color: aqua ;
+}
+
+.subir:hover{
+    border: 2px black dashed;
+    margin-bottom: 16px;
+    background-color: rgb(108, 134, 212) ;
+	cursor: pointer;
+}
+
+.hover{
+	width: 40%;
+	padding: 15px 10px;
+	border:none;
+    border-radius: 5px;
+	font-family: 'Slabo 27px', serif;
+	font-size: 18px;
+	border: 2px black dashed;
+	margin-bottom: 16px;
+	background-color: rgb(108, 134, 212) ;
+}
+
+#subir_img{  
+    margin-left: 0px;
+}
+
+#subir_file{
+    float: right;
+}
+
+.formulario .contenedor_buttons{
+	background: #fff;
+	border-radius:0px 0px 6px 6px;
+    display: flex;
+	flex-wrap:no-wrap;
+	justify-content:space-between;
+	margin-bottom: 20px;
+}
+
+.enviar, .borrar{
+    width: 50%;
+	padding: 15px 10px;
+	border:none;
+	font-family: 'Slabo 27px', serif;
+	font-size: 18px;
+    color: aliceblue;
+}
+
+.enviar{
+    background-color: green;
+    border-radius: 0px 0px 0px 6px;
+}
+
+.enviar:hover{
+    background-color: rgb(33, 176, 33);
+	cursor: pointer;
+}
+
+.borrar{
+    background-color: red;
+    border-radius: 0px 0px 6px 0px;
+}
+
+.borrar:hover{
+    background-color: rgb(254, 66, 66);
+	cursor: pointer;
+}
+
+.error{
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 15px 10px;
+	border:none;
+    border-radius: 5px;
+	border-bottom: 2px solid red;
+	font-family: 'Slabo 27px', serif;
+	font-size: 18px;
+	
+}
+
+.error_img{
+	width: 40%;
+	margin-bottom: 20px;
+	padding: 15px 10px;
+	border:none;
+    border-radius: 5px;
+	font-family: 'Slabo 27px', serif;
+	font-size: 18px;
+    background-color: rgb(252, 79, 79) ;
+}
+
+.error_img:hover{
+	border: 2px black dashed;
+    margin-bottom: 16px;
+    background-color: rgb(255, 184, 184) ;
+	cursor: pointer;
+}
+
+.hidden{
+	display: none;
+}
